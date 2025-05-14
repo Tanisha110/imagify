@@ -6,7 +6,7 @@ const describe = () => {
     <div className='flex flex-col items-center justify-center my-24 p-6 md:px-28'> 
         <h1 className='text-3xl sm:text-4xl font-semibold mb-2 text-white'> Create AI images</h1>
         <p className='text-lg  mb-2 text-white opacity-70'>Turning imagination into visuals</p>
-        <div className='flex flex-col gap-5 md:gap-14 md:flex-row mt-10'>
+        <div className='flex flex-col gap-5 md:gap-14 md:flex-row items-center mt-10'>
           <img src={assets.gen} alt="" className='w-80 xl:w-96 rounded-lg'/>
           <div>
             <h2 className='text-3xl text-white opacity-80 mb-4'>Introducing the AI-powered Text to Image Generator</h2>
