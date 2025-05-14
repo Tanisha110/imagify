@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+  <!-- Outer White Circle Background with subtle border -->
+  <circle cx="12" cy="12" r="10" fill="white" stroke="#000" stroke-width="0.2"></circle>
+
+  <!-- Head -->
+  <circle cx="12" cy="8" r="4" fill="none" stroke="#000" stroke-width="0.2"></circle>
+
+  <!-- Body with thicker stroke for better appearance -->
+  <path d="M6 18c0-2 6-2 6-2s6 0 6 2" fill="none" stroke="#000" stroke-width="0.2"></path>
+</svg>

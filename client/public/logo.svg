@@ -1,0 +1,24 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"></stop>
+      <stop offset="100%" stop-color="#8B5CF6"></stop>
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded gradient background -->
+  <rect width="100" height="100" rx="20" fill="url(#grad)"></rect>
+  
+  <!-- Text lines (prompt) -->
+  <path d="M25 30 H75" stroke="white" stroke-width="4" stroke-linecap="round"></path>
+  <path d="M25 40 H60" stroke="white" stroke-width="3" stroke-linecap="round"></path>
+  
+  <!-- Camera body -->
+  <rect x="28" y="58" width="44" height="26" rx="6" fill="white"></rect>
+  
+  <!-- Camera lens -->
+  <circle cx="50" cy="71" r="6" fill="#8B5CF6"></circle>
+  
+  <!-- Small top bump (shutter) -->
+  <rect x="40" y="52" width="20" height="6" rx="2" fill="white"></rect>
+</svg>

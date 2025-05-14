@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5D29DF"></stop>
+      <stop offset="100%" stop-color="#180D33"></stop>
+    </linearGradient>
+  </defs>
+  
+  <!-- White Circle Background -->
+  <circle cx="12" cy="12" r="11" fill="white"></circle>
+
+  <!-- Star Icon -->
+  <path fill="url(#starGradient)" d="M12 2l2.92 5.91 6.51.95-4.71 4.59 1.11 6.48L12 17.77l-5.83 3.06 1.11-6.48L2.57 8.86l6.51-.95L12 2z"></path>
+</svg>
