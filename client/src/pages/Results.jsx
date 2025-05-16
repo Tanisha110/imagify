@@ -5,8 +5,13 @@ const Results = () => {
   const [isImageLoaded, setIsImageLoaded]= useState(false)
   const [loading, setLoading]= useState(true)
   const [input, setInput]= useState('')
+
+  const onSubmitHander = async (e)=> {
+     
+  }
+   
   return (
-    <form className='flex flex-col min-h-[90vh] justify-center items-center'>
+    <form  onSubmit={ onSubmitHander } className='flex flex-col min-h-[90vh] justify-center items-center'>
       <div>
        <div className='relative '>
         <img src={image} alt="" className='max-w-sm rounded'/>

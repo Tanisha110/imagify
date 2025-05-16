@@ -5,7 +5,8 @@ import { AppContext } from '../context/AppContext';
 const Navbar = () => {
 
   const navigate = useNavigate();
-  const {user}=useContext(AppContext)
+  const {user , setShowLogin}=useContext(AppContext)
+  
 return (
  <div className='p-2 z-10 flex items-center justify-between py-4  border-b border-white'>
   <Link to='/'>
@@ -46,7 +47,9 @@ return (
   Pricing
 </button>
 
-     <button className='bg-gradient-to-r from-[#180D33] to-[#5D29DF] text-white px-6 py-2 border-2 border-white rounded hover:scale-105 transition-all duration-700'>
+     <button
+     onClick={()=>setShowLogin(true)
+     } className='bg-gradient-to-r from-[#180D33] to-[#5D29DF] text-white px-6 py-2 border-2 border-white rounded hover:scale-105 transition-all duration-700'>
   Sign In
 </button>
 
