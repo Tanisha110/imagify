@@ -5,7 +5,7 @@ import { AppContext } from '../context/AppContext';
 const Navbar = () => {
 
   const navigate = useNavigate();
-  const {user , setShowLogin}=useContext(AppContext)
+  const {user , setShowLogin, logout, credit}=useContext(AppContext)
   
 return (
  <div className='p-2 z-10 flex items-center justify-between py-4  border-b border-white'>
@@ -24,14 +24,14 @@ return (
     navigate('/buy');
   }} className='flex items-center gap-2 bg-gradient-to-r from-[#180D33] to-[#5D29DF] text-white px-6 py-2 border-2 border-white rounded-full hover:scale-105 transition-all duration-700'>
       <img className='w-5' src={assets.creditstar} alt="" />
-    <p className=' text-xs sm:text-sm font-regular'>Credits Left : 50</p>
+    <p className=' text-xs sm:text-sm font-regular'>Credits Left : {credit}</p>
      </button>
-     <p className='px-6 py-2 bg-white text-[#180D33] border-2 border-white rounded-full'>Hi, Tanisha</p>
+     <p className='px-6 py-2 bg-white text-[#180D33] border-2 border-white rounded-full'>Hi, {user.name}</p>
      <div className='relative group bg-white text-[#180D33] border-2 border-white rounded-full'>
        <img src={assets.profile} className='w-10 drop-shadow' alt="" />
        <div className=' absolute hidden group-hover:block top-0 right-0 text-white rounded pt-12 '>
         <ul>
-          <li className='px-6 py-2 bg-white text-[#180D33] border-2 border-white rounded'>Logout</li>
+          <li onClick={logout} className='px-6 py-2 bg-white text-[#180D33] border-2 border-white rounded'>Logout</li>
         </ul>
        </div>
      </div>

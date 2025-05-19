@@ -1,13 +1,23 @@
-import  React, {useState} from 'react'
+import  React, {useState, useContext} from 'react'
 import {assets} from '../assets/assets'
+import {AppContext} from '../context/AppContext'
 const Results = () => {
   const [image, setImage]=useState(assets.gen)
   const [isImageLoaded, setIsImageLoaded]= useState(false)
   const [loading, setLoading]= useState(true)
   const [input, setInput]= useState('')
-
+  const {generateImage} = useContext(AppContext)
   const onSubmitHander = async (e)=> {
-     
+     e.preventDefault()
+     setLoading(true)
+     if(input){
+      const image = await generateImage(input)
+      if(image){
+        setIsImageLoaded(true)
+        setImage(image)
+      }
+     }
+     setLoading(false)
   }
    
   return (
@@ -25,7 +35,8 @@ const Results = () => {
      <div className='flex w-full max-w-xl bg-neutral-500 text-white text-sm p-0.5 mt-10 rounded-full'> 
      <input onChange={e => setInput(e.target.value)} value={input}
      type="text" placeholder='Describe what you want to generate' className='flex-1 bg-transparent outline-none ml-8 max-sm:w-20'/>
-     <button type='submit' className='bg-gradient-to-r from-[#180D33] to-[#5D29DF] text-white px-6 py-2 border-2 border-white rounded-full hover:scale-105 transition-all duration-700'>Generate</button>
+     <button 
+      type='submit' className='bg-gradient-to-r from-[#180D33] to-[#5D29DF] text-white px-6 py-2 border-2 border-white rounded-full hover:scale-105 transition-all duration-700'>Generate</button>
      </div>}
      {isImageLoaded &&
      <div className=' flex gap-2 flex-wrap justify-center text-white text-sm p-0.5 mt-10 rounded-full  '>
