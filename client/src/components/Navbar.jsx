@@ -20,7 +20,6 @@ return (
     {user? 
     <div className='flex items-center gap-2 sm:gap-3'>
      <button  onClick={() => {
-    console.log("Clicked");
     navigate('/buy');
   }} className='flex items-center gap-2 bg-gradient-to-r from-[#180D33] to-[#5D29DF] text-white px-6 py-2 border-2 border-white rounded-full hover:scale-105 transition-all duration-700'>
       <img className='w-5' src={assets.creditstar} alt="" />
@@ -39,7 +38,6 @@ return (
     :<div className='flex items-center gap-2 sm:gap-5'>
       <button
   onClick={() => {
-    console.log("Clicked");
     navigate('/buy');
   }}
   className='px-6 py-2 bg-white text-[#180D33] border-2 border-white rounded hover:scale-105 transition-all duration-700'
