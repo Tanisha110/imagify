@@ -1,48 +1,48 @@
-🖋️ ink2pic – Text to Image Converter
-ink2pic is a full-stack MERN web application that transforms text prompts into AI-generated images using the ClipDrop Stable Diffusion API. The platform is designed for a smooth user experience with real-time generation, user authentication, and future support for credit-based image generation and payments.
+# 🖋️ ink2pic – Text to Image Converter
 
-🌐 Live Demo
-👉 ink2pic.vercel.app
+**ink2pic** is a full-stack **MERN** web application that transforms text prompts into AI-generated images using the **ClipDrop Stable Diffusion API**. The platform is designed for a smooth user experience with real-time generation, user authentication, and future support for credit-based image generation and payments.
 
-🛠️ Tech Stack
-Frontend: React, Tailwind CSS
+## 🌐 Live Demo  
+👉 [ink2pic.vercel.app](https://ink2pic.vercel.app)
 
-Backend: Node.js, Express.js
+## 🛠️ Tech Stack
 
-Database: MongoDB
+- **Frontend:** React, Tailwind CSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **AI Integration:** ClipDrop API  
 
-AI Integration: ClipDrop API
+## ✨ Features
 
-✨ Features
-🔠 Text-to-Image: Generate images from user text using the ClipDrop API
+- 🔠 **Text-to-Image**: Generate images from user text using the ClipDrop API  
+- 🔐 **Login/Signup System**: Secure user authentication with MongoDB  
+- 💳 **Credit System**: Track and deduct image generation credits  
+- 🧾 **Payments (Planned)**: Future integration of a payment gateway for credit top-up  
+- 🖼️ **Image Preview & Download**: Instantly view and save generated images  
+- 📱 **Responsive UI**: Fully optimized for desktop and mobile users  
 
-🔐 Login/Signup System: Secure user authentication via MongoDB
+## 🧠 How it Works
 
-💳 Credit System: Track and deduct image generation credits
+1. User enters a text prompt.
+2. Backend sends the prompt to the ClipDrop API.
+3. The generated image is returned and displayed to the user.
+4. Registered users have credits tracked and stored in MongoDB.
 
-🧾 Payments (Planned): Future integration of payment gateway for credit top-up
+## 📌 Roadmap
 
-🖼️ Image Preview & Download: Instantly view and save generated images
+- [ ] Add user credit usage limits  
+- [ ] Integrate payment gateway for credits  
+- [ ] Add prompt history and image gallery  
+- [ ] Improve AI prompt quality and rendering  
 
-📱 Responsive UI: Fully optimized for desktop and mobile users
+## 🚀 Deployment
 
-🧠 How it Works
-User enters a text prompt.
+The application is fully deployed at **[ink2pic.vercel.app](https://ink2pic.vercel.app)**  
 
-Backend sends the prompt to the ClipDrop API.
+## 🤝 Contributions
 
-The generated image is returned and shown to the user.
-
-For registered users, credits are tracked in the MongoDB database.
-
-📌 Roadmap
- Add user credit usage limits
-
- Integrate payment gateway for credits
-
- Add prompt history and image gallery
-
- Improve AI prompt quality and rendering
-
-🤝 Contributions
 Have an idea or improvement? Feel free to fork this project and open a pull request!
+
+---
+
+
